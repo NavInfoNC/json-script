@@ -27,18 +27,22 @@ Sample::
 
    .. code-block:: jss
 
-   /*
-      Block comments
-   */
-   <root>
-   SomeRootNode = 
-   {
-      formatVersion : "1.0.0", // some line comments
-      guid : string,
-      length : int,
-      size : float,
-      enabled : bool
-   }     
+      /*
+         Block comments
+      */
+      <root>
+      SomeRootNode = 
+      {
+         formatVersion : "1.0.0", // some line comments
+         guid : string,
+         length : int,
+         size : float,
+         enabled : bool
+      }
+
+It will be rendered as:
+
+   .. image:: images/syntax-highlight.png
 
 Reference:
 

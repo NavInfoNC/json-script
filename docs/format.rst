@@ -214,7 +214,7 @@ Comments
 C++ style comments is used.
 
 Cross Reference in Comments
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
+...........................
 
 Example:
 
@@ -223,7 +223,7 @@ Example:
    <root>
    CatHouse = 
    {
-      cats : Cat[]   // also see `Dog` for cross reference.
+      cats : Cat[]   // also see |Dog| for cross reference.
    }
 
 Optinal Field
