@@ -37,10 +37,10 @@ And it allows to add C++ style comments.
 In This Project
 ---------------
 
-This project contains the format specification document of JSS and some color-highlight plugins for Sphinx-Docs.
+This project contains:
 
    * `JSS Format Specification <docs/format.rst>`__
-   * `Syntax hightlight with Sphinx <docs/syntax-highlight-in-sphinx.rst>`__
+   * `Sphinx Plugin for Syntax hightlight <docs/syntax-highlight-in-sphinx.rst>`__
 
 Notes
 -----
