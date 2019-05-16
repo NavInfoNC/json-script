@@ -23,6 +23,24 @@ Root Node
       ...
    }
 
+Comments
+--------
+
+C++ style comments is used.
+
+Cross Reference in Comments
+...........................
+
+Example:
+
+.. code-block:: jss
+
+   <root>
+   CatHouse = 
+   {
+      cats : Cat[]   // also see |Dog| for cross reference.
+   }
+
 Types
 -----
 
@@ -133,7 +151,7 @@ Enumerations can have designated values, as in C++:
    }
 
 Class
-^^^^^
+.....
 
 Example:
 
@@ -152,8 +170,23 @@ Example:
       weight: float
    }
 
+Array
+.....
+
+Example
+
+.. code-block:: jss
+
+   {
+      speedLimits: int[],
+      cats : Cat[]
+   }
+
+Advanced Topics
+---------------
+
 Inlined Class/Enumeration
-^^^^^^^^^^^^^^^^^^^^^^^^^
+.........................
 
 If a class or enumeration only appears in one place, it can be inlined or even unnamed.
 
@@ -180,21 +213,42 @@ Exmaple:
          weight: float
       }
    }
-   
-Array
-^^^^^
 
-Example
+Renamed Primitive Types
+.......................
+
+By giving a primitive type another name, the document will be easier to understand and more strict.
+
+.. code-block:: jss
+
+   typedef int UnixTimestamp; // Number of seconds since Jan, 1, 1970.
+   
+   Trip =
+   {
+      startTime: UnixTimestamp,
+      endTime: UnixTimestamp
+   }
+
+   typedef int TimeTick;   // the number of milliseconds
+
+   {
+      simulationInterval : TimeTick
+   }
+   
+Optinal Field
+.............
+
+Some fields only exist when certain condition is met.
 
 .. code-block:: jss
 
    {
-      speedLimits: int[],
-      cats : Cat[]
+      variableA : int,
+      variableB : string if variableA >= 3 and variableA <= 10
    }
 
 Constant Value
---------------
+..............
 
 Constant values are used to express that a symbol must have a specific value.
 The equal sign is used to differentiate it from a Literal Type.
@@ -206,34 +260,4 @@ The equal sign is used to differentiate it from a Literal Type.
       aFloat = 1.0,
       aInt = 1,
       aBool = true
-   }
-
-Comments
---------
-
-C++ style comments is used.
-
-Cross Reference in Comments
-...........................
-
-Example:
-
-.. code-block:: jss
-
-   <root>
-   CatHouse = 
-   {
-      cats : Cat[]   // also see |Dog| for cross reference.
-   }
-
-Optinal Field
--------------
-
-Some fields only exist when certain condition is met.
-
-.. code-block:: jss
-
-   {
-      variableA : int,
-      variableB : string if variableA >= 3 and variableA <= 10
    }
