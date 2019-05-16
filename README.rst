@@ -4,7 +4,7 @@ JsonScript
 JsonScript(JSS) is a markup language to describe the structure of JSON file.
 
 Together with Sphinx-Docs_, JSS provides a easy-and-powerful way to describe a JSON file.
-It has been widely used in our department to document online service's requests and reponses for many years .
+It has been widely used in our department to document online service for many years .
 
 A Simple Example
 ----------------
@@ -40,7 +40,7 @@ In This Project
 This project contains the format specification document of JSS and some color-highlight plugins for Sphinx-Docs.
 
    * `JSS Format Specification <docs/format.rst>`__
-   * `Syntax hightlight with Sphinx <docs/syntax-highlight-in-sphinx>`__
+   * `Syntax hightlight with Sphinx <docs/syntax-highlight-in-sphinx.rst>`__
 
 Notes
 -----

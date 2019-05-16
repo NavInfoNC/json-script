@@ -27,7 +27,7 @@ Types
 -----
 
 Internal Types
-^^^^^^^^^^^^^^
+..............
 
    int
       Can have integer value. For example 1000.
@@ -39,10 +39,10 @@ Internal Types
       It have have only two values. "true" or "false".
 
    float
-      It must contain a dot. For example, 1.0
+      A real number. It must contain a dot. For example, 1.0
 
 Literal Type
-^^^^^^^^^^^^
+............
 
    To provide insights into the value of a string or number,
    literal types can be used in place of regular types.
@@ -68,7 +68,7 @@ Literal Type
       }
 
 Enumeration
-^^^^^^^^^^^
+...........
 
 Enumerations resembles C++ enumerations grammarly.
 So it can be copy-pasted between C++ code and JSS document.
@@ -80,7 +80,7 @@ Example
    enum CostModel =
    {
       CostModel_none,      // The value of the first option is 0.
-      CostModel_fastest,   // the next one is 1
+      CostModel_fastest,   // the next one is 1, as in C++
       CostModel_shortest
    }
 
@@ -96,7 +96,7 @@ A enumeration can be used as value, or as string.
             costModel : CostModel   // as value. It will be stored as int in JSON
          }
 
-      The following JSON document comply with the JSS:
+      The following JSON document complies with the JSS:
 
       .. code-block:: js
       
@@ -112,7 +112,7 @@ A enumeration can be used as value, or as string.
             costModel : CostModel.toString()   // as string. It will be stored as string in JSON.
          }
 
-      The following JSON document comply with the JSS:
+      The following JSON document complies with the JSS:
 
       .. code-block:: js
       
@@ -120,7 +120,7 @@ A enumeration can be used as value, or as string.
             "costModel" : "shortest"
          }
 
-Enumerations can have designated value, as in C++:
+Enumerations can have designated values, as in C++:
 
 .. code-block:: jss
 
@@ -196,7 +196,7 @@ Example
 Constant Value
 --------------
 
-Constant values are used to express that a symbol must have the specified value.
+Constant values are used to express that a symbol must have a specific value.
 The equal sign is used to differentiate it from a Literal Type.
 
 .. code-block:: jss
