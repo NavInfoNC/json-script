@@ -21,7 +21,7 @@ Run ``pygmentize -O full=True -o sample.html sample.jss`` in the command line, t
 Use in Sphinx
 -------------
 
-Specify highlighting languages in code block directive, ``jss`` or ``JsonScript`` for JsonScript.
+Specify highlighting language in code block directive, ``jss`` or ``JsonScript`` for JsonScript.
 
 Sample::
 
@@ -40,7 +40,7 @@ Sample::
          enabled : bool
       }
 
-It will be rendered as:
+The above text will be rendered as:
 
    .. image:: images/syntax-highlight.png
 

@@ -1,10 +1,10 @@
 JsonScript
 ==========
 
-JsonScript(JSS) is a markup language to describe the structure of JSON file.
+JsonScript(JSS) is a markup language to describe the structure of JSON data.
 
-Together with Sphinx-Docs_, JSS provides a easy-and-powerful way to describe a JSON file.
-It has been widely used in our department to document online service for many years .
+Together with Sphinx-Docs_, JSS provides an easy-and-powerful way to document the structure of JSON data.
+It has been widely used in our department to document online service for many years.
 
 A Simple Example
 ----------------
@@ -31,8 +31,8 @@ We can use a JSS:
       eta : int  // Estimated Time of Arrival, in seconds.
    }
 
-As you can see, literal values are often used instead of a types(string, int, float).
-And it allows to add C++ style comments.
+As you can see, literal values are often used instead of types(string, int, float).
+And it allows adding C++ style comments.
 
 In This Project
 ---------------
@@ -47,7 +47,7 @@ Notes
 
 JSS's inspired by DataScript_, which is used to describe binary data.
 
-There are other alternatives, like `Json Schema`_.
+There are other alternatives, like `JSON Schema`_.
 
 .. _DataScript: http://datascript.sourceforge.net/
 .. _`Json Schema`: https://spacetelescope.github.io/understanding-json-schema/index.html

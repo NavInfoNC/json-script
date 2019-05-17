@@ -8,7 +8,7 @@ JsonScript Format Specification
 Root Node
 ---------
 
-'<root>' is used to denote the root of the json document. There must be only one root per document.
+'<root>' is used to denote the root of the JSON document. There must be only one root per document.
 
 .. code-block:: jss
 
@@ -48,13 +48,13 @@ Internal Types
 ..............
 
    int
-      Can have integer value. For example 1000.
+      It can have an integer value. For example 1000.
 
    string
       Quoted string. For example "Hello World".
 
    bool
-      It have have only two values. "true" or "false".
+      It has only two values. "true" or "false".
 
    float
       A real number. It must contain a dot. For example, 1.0
@@ -104,7 +104,7 @@ Example
 
 It's recommended to have a meaningless option as 0.
 
-A enumeration can be used as value, or as string.
+An enumeration can be used as a value or a string.
 
    1. As value
 
@@ -122,7 +122,7 @@ A enumeration can be used as value, or as string.
             "costModel" : 2
          }
 
-   2. As string
+   2. As a string
 
       .. code-block:: jss
 
@@ -238,7 +238,7 @@ By giving a primitive type another name, the document will be easier to understa
 Optinal Field
 .............
 
-Some fields only exist when certain condition is met.
+Some fields only exist when a certain condition is met.
 
 .. code-block:: jss
 
