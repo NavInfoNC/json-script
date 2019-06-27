@@ -47,43 +47,43 @@ Types
 Internal Types
 ..............
 
-   int
-      It can have an integer value. For example 1000.
+int
+   It can have an integer value. For example 1000.
 
-   string
-      Quoted string. For example "Hello World".
+string
+   Quoted string. For example "Hello World".
 
-   bool
-      It has only two values. "true" or "false".
+bool
+   It has only two values. "true" or "false".
 
-   float
-      A real number. It must contain a dot. For example, 1.0
+float
+   A real number. It must contain a dot. For example, 1.0
 
 Literal Type
 ............
 
-   To provide insights into the value of a string or number,
-   literal types can be used in place of regular types.
+To provide insights into the value of a string or number,
+literal types can be used in place of regular types.
 
-   For example, the following two expressions are equivalent:
+For example, the following two expressions are equivalent:
 
-   .. code-block:: jss
-   
-      {
-         formatVersion : string,
-         guid : string,
-         length : int,
-         size : float,
-         enabled : bool
-      }
+.. code-block:: jss
 
-      {
-         formatVersion : "1.0.0",
-         guid : "097b1b1b559db449b227bcea36c3bdd3",
-         length : 1300
-         size : 1.5,
-         enabled : true
-      }
+   {
+      formatVersion : string,
+      guid : string,
+      length : int,
+      size : float,
+      enabled : bool
+   }
+
+   {
+      formatVersion : "1.0.0",
+      guid : "097b1b1b559db449b227bcea36c3bdd3",
+      length : 1300
+      size : 1.5,
+      enabled : true
+   }
 
 Enumeration
 ...........
@@ -106,37 +106,37 @@ It's recommended to have a meaningless option as 0.
 
 An enumeration can be used as a value or a string.
 
-   1. As value
+1. As value
 
-      .. code-block:: jss
+   .. code-block:: jss
 
-         {
-            costModel : CostModel   // as value. It will be stored as int in JSON
-         }
+      {
+         costModel : CostModel   // as value. It will be stored as int in JSON
+      }
 
-      The following JSON document complies with the JSS:
+   The following JSON document complies with the JSS:
 
-      .. code-block:: js
-      
-         {
-            "costModel" : 2
-         }
+   .. code-block:: js
+   
+      {
+         "costModel" : 2
+      }
 
-   2. As a string
+2. As a string
 
-      .. code-block:: jss
+   .. code-block:: jss
 
-         {
-            costModel : CostModel.toString()   // as string. It will be stored as string in JSON.
-         }
+      {
+         costModel : CostModel.toString()   // as string. It will be stored as string in JSON.
+      }
 
-      The following JSON document complies with the JSS:
+   The following JSON document complies with the JSS:
 
-      .. code-block:: js
-      
-         {
-            "costModel" : "shortest"
-         }
+   .. code-block:: js
+   
+      {
+         "costModel" : "shortest"
+      }
 
 Enumerations can have designated values, as in C++:
 

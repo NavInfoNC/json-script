@@ -4,8 +4,8 @@ Syntax Highlight of JsonScript in Sphinx
 Prerequisite
 ------------
 
-   * Python version 2.7.x (https://www.python.org/downloads/)
-   * Pygments(Python syntax highlighter)
+* Python version 2.7.x (https://www.python.org/downloads/)
+* Pygments(Python syntax highlighter)
 
 Installation
 ------------
@@ -42,10 +42,10 @@ Sample::
 
 The above text will be rendered as:
 
-   .. image:: images/syntax-highlight.png
+.. image:: images/syntax-highlight.png
 
 Reference:
 
-   * http://pygments.org/
-   * http://pygments.org/docs/lexerdevelopment/
+* http://pygments.org/
+* http://pygments.org/docs/lexerdevelopment/
 
