@@ -280,7 +280,7 @@ Some fields are ``optional``. If not specified, variables are required by defaul
 .. code-block:: jss
 
    {
-      variableA : int,              // required if not specified
+      variableA : int,              // required (by default)
       variableB : int optional      // optional
       variableC : int required      // required
    }
