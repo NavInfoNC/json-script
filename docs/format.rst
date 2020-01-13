@@ -235,8 +235,8 @@ By giving a primitive type another name, the document will be easier to understa
       simulationInterval : TimeTick
    }
    
-Optinal Field
-.............
+Conditional Field
+.................
 
 Some fields only exist when a certain condition is met.
 
@@ -245,6 +245,19 @@ Some fields only exist when a certain condition is met.
    {
       variableA : int,
       variableB : string if variableA >= 3 and variableA <= 10
+   }
+
+Optional Field
+..............
+
+Some fields are ``optional``. If not specified, variables are required by default.
+
+.. code-block:: jss
+
+   {
+      variableA : int,              // required if not specified
+      variableB : int optional      // optional
+      variableC : int required      // required
    }
 
 Constant Value
