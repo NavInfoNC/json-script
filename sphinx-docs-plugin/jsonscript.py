@@ -70,7 +70,7 @@ class JsonScriptLexer(RegexLexer):
             (r'0[0-7]+', Number.Oct),
             (r'0x[0-9a-fA-F]+', Number.Hex),
             (r'\d+', Number.Integer),
-            (words(('enum', 'if'), suffix=r'\b'), Keyword),
+            (words(('enum', 'if', 'optional', 'required'), suffix=r'\b'), Keyword),
             (r'[~!%^&*+=|?:<>/-]', Operator),
             (r'(bool|int|string|float)\b', Keyword.Type),
             (r'(true|false)\b', Name.Builtin),

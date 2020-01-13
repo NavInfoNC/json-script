@@ -170,10 +170,35 @@ Example:
       weight: float
    }
 
+Subclassing
+...........
+
+Example:
+
+.. code-block:: jss
+
+   Issue =
+   {
+      id: int,
+      summary: string,
+      detail: string,
+      reporter: string
+   }
+
+   Bug : Issue =
+   {
+      reproduceSteps: string
+   }
+
+   NewFeature : Issue =
+   {
+      userRequirements: string
+   }
+
 Array
 .....
 
-Example
+Example:
 
 .. code-block:: jss
 

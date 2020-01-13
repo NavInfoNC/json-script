@@ -39,8 +39,8 @@ CatHouse =
 Cat =
 {
 	name : string,
-	age: int,
-	weight: float
+	age: int optional,
+	weight: float required
 }
 
 TypeWithConstantValue =
@@ -55,4 +55,22 @@ TypeWithOptionalField =
 {
 	variableA : int,
 	variableB : string if variableA >= 3
+}
+
+Issue =
+{
+	id: int,
+	summary: string,
+	detail: string,
+	reporter: string
+}
+
+Bug : Issue =
+{
+	reproduceSteps: string
+}
+
+NewFeature : Issue =
+{
+	userRequirements: string
 }
