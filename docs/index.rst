@@ -1,5 +1,5 @@
-Index
-=====
+JsonScript
+==========
 
 .. toctree::
    :maxdepth: 1

@@ -1,5 +1,7 @@
-Syntax Highlight of JsonScript in Sphinx
-========================================
+Syntax Highlight in Sphinx
+==========================
+
+Sphinx is a great too to write documents. Inlined JsonScript code can be highlighted with the following plugin.
 
 Prerequisite
 ------------

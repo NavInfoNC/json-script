@@ -1,9 +1,5 @@
-JsonScript Format Specification
-===============================
-
-.. contents::
-   :local:
-   :depth: 2
+Format Specification
+====================
 
 Root Node
 ---------
