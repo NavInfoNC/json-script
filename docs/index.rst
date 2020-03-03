@@ -39,8 +39,8 @@ In This Project
 
 This project contains:
 
-* `JSS Format Specification <docs/format.rst>`__
-* `Sphinx Plugin for Syntax hightlight <docs/syntax-highlight-in-sphinx.rst>`__
+* `JSS Format Specification <format.rst>`__
+* `Sphinx Plugin for Syntax hightlight <syntax-highlight-in-sphinx.rst>`__
 
 Notes
 -----
