@@ -12,8 +12,9 @@ Prerequisite
 Installation
 ------------
 
-* Copy ``jsonscript.py`` into the ``lexers`` directory of the installed Python package: ``pygments``, for example: ``C:\Python27\Lib\site-packages\pygments\lexers``.
-* Run ``_mapping.py`` in the ``lexers`` directory to update lexer mapping.
+*  Copy ``jsonscript.py`` into the ``lexers`` directory of the installed Python package: ``pygments``,
+   for example: ``C:\Python27\Lib\site-packages\pygments\lexers`` or ``/usr/lib/python2.7/dist-packages/pygments/lexers``
+*  Run ``_mapping.py`` in the ``lexers`` directory to update lexer mapping.
 
 Simple Test
 -----------
